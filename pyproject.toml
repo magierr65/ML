@@ -12,9 +12,9 @@ dependencies = [
     "matplotlib",
     "seaborn",
     "scikit-learn",
-    "jupyter",  # Jupyter często zostawia się w głównych w projektach ML
+    "jupyter",
     "tqdm",
-    "ipykernel" # Warto dodać, żeby VS Code łatwo wykrył kernel
+    "ipykernel"
 ]
 
 [dependency-groups]
