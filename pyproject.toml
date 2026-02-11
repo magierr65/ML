@@ -1,0 +1,40 @@
+[project]
+name = "ml"
+version = "0.1.0"
+description = "Machine learning experiments and projects"
+authors = [{ name = "Jakub Magierski" }]
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "seaborn",
+    "scikit-learn",
+    "jupyter",  # Jupyter często zostawia się w głównych w projektach ML
+    "tqdm",
+    "ipykernel" # Warto dodać, żeby VS Code łatwo wykrył kernel
+]
+
+[dependency-groups]
+dev = [
+    "ruff",
+    "pytest",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"] 
+ignore = []
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
