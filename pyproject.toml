@@ -14,7 +14,8 @@ dependencies = [
     "scikit-learn",
     "jupyter",
     "tqdm",
-    "ipykernel"
+    "ipykernel",
+    "xgboost"
 ]
 
 [dependency-groups]
